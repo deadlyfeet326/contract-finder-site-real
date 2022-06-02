@@ -1,12 +1,12 @@
 import '../App.css';
 import {useState, useEffect} from 'react'
 import {Button, Container, Col, Row, Image} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Contracts from '../components/Contracts'
 import MainHeader from '../components/MainHeader'
 import Filters from '../components/Filters'
 import Pinned from '../components/Pinned'
-import { getContractAddress } from 'ethers/lib/utils';
+// import { getContractAddress } from 'ethers/lib/utils';
 import io from 'socket.io-client'
 
 const socket = io.connect('https://eth-new-contracts.herokuapp.com/')
