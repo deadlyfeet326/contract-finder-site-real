@@ -89,12 +89,11 @@ function ETH() {
   return (
     <div className="App">
       <div className='header'>
-        <div>
-          ETH
-        </div>
+        <h2> ETH </h2>
+        <MainHeader className="filterButton" onFilter={() => setShowFilters(!showFilters)} showFilters={showFilters}/>
       </div>
+      
       <div className="filters">
-                <MainHeader onFilter={() => setShowFilters(!showFilters)} showFilters={showFilters}/>
                 { showFilters && <Filters  name={filters.name} decimals={filters.decimals} supply={filters.supply} date={filters.date} changeFilters={changeFilters} /> }
       </div>
       <div className='content'>
