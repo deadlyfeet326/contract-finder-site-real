@@ -11,6 +11,7 @@ import io from 'socket.io-client'
 
 const socket = io.connect('https://eth-new-contracts.herokuapp.com/')
 let chain = "eth"
+const prefix = "https://etherscan.io/address/"
 
 function ETH() {
 
@@ -89,7 +90,7 @@ function ETH() {
     <div className="App">
       <div className='header'>
         <div>
-          BSC
+          ETH
         </div>
       </div>
       <div className="filters">
@@ -99,7 +100,7 @@ function ETH() {
       <div className='content'>
         <div className="contracts">
           <b> CONTRACTS </b>
-          <Contracts contracts={contracts} pinContract={pinContract}/>
+          <Contracts prefix={prefix} contracts={contracts} pinContract={pinContract}/>
         </div>
         <div className='pinned'>
         <b> PINNED </b>

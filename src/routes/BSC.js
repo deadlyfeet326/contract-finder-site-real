@@ -11,6 +11,7 @@ import io from 'socket.io-client'
 let chain = "bsc"
 
 const socket = io.connect('https://bsc-new-contracts.herokuapp.com/')
+const prefix = "https://bscscan.com/address"
 
 function BSC() {
 
@@ -101,7 +102,7 @@ function BSC() {
       <div className='content'>
         <div className="contracts">
           <b> CONTRACTS </b>
-          <Contracts contracts={contracts} pinContract={pinContract}/>
+          <Contracts prefix={prefix} contracts={contracts} pinContract={pinContract}/>
         </div>
         <div className='pinned'>
         <b> PINNED </b>
