@@ -1,7 +1,6 @@
 import './App.css';
 import React, {useState, useEffect, useRef} from 'react'
 // import {Button, Container, Col, Row, Image} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 // import Contracts from './components/Contracts'
 // import MainHeader from './components/MainHeader'
 // import Filters from './components/Filters'
