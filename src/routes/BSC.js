@@ -11,7 +11,7 @@ import io from 'socket.io-client'
 let chain = "bsc"
 
 const socket = io.connect('https://bsc-new-contracts.herokuapp.com/')
-const prefix = "https://bscscan.com/address"
+const prefix = "https://bscscan.com/address/"
 
 function BSC() {
 
