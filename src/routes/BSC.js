@@ -102,11 +102,11 @@ function BSC() {
       <div className='content'>
         <div className="contracts">
           <b> CONTRACTS </b>
-          <Contracts prefix={prefix} contracts={contracts} pinContract={pinContract}/>
+          <Contracts prefix={prefix} chain={chain} contracts={contracts} pinContract={pinContract}/>
         </div>
         <div className='pinned'>
         <b> PINNED </b>
-        {pinned.length > 0 && <Pinned pinned={pinned} unpinContract={unpinContract}/> }
+        {pinned.length > 0 && <Pinned pinned={pinned} prefix={prefix} chain={chain} unpinContract={unpinContract}/> }
         </div>
       </div>
     </div>
